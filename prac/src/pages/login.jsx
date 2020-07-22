@@ -1,14 +1,9 @@
 import React from 'react';
-import Header from '../components/Header'
-import { Link } from 'react-router-dom';
-const login = () => {
+import LoginBox from '../components/LoginBox'
+import '../style/Header.css'
+const Login = () => {
     return (
-        <>
-            <Header />
-            <div>jihun</div>
-            <Link to="/main">로그인 하기</Link>
-        </>
+            <LoginBox />
     )
 }
-
-export default login;
+export default Login;

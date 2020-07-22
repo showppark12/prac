@@ -1,16 +1,21 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import { Intro, login, main } from 'pages';
-
+import { Intro, Login, Main } from 'pages';
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import { Container } from '@material-ui/core';
+import '../style/App.css'
 const App = () => {
     return (
-        <div>
-            <Route exact path="/" component={Intro} />
-            <Route path="/login" component={login} />
-            <Route path="/main" component={main} />
-
-
-        </div>
+        <>
+            <Header />
+            <Container id = "content">
+                <Route exact path="/" component={Intro} />
+                <Route path="/login" component={Login} />
+                <Route path="/main" component={Main} />
+            </Container>
+            <Footer />
+        </>
     )
 }
 export default App;
