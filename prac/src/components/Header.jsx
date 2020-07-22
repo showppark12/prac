@@ -4,12 +4,12 @@ import '../style/Header.css'
 import Container from '@material-ui/core/Container';
 const Header = () => {
     return (
-        <header>
-            <Container id ="headerContainer" maxWidth ="lg">
-                <h1>logo</h1>
-                <div id="login">login</div>
+        <div className = "header">
+            <Container id="headerContainer" maxWidth ="lg">
+                <div>logo</div>
+                <div id="login"><Link to ='/login'>login</Link></div>
             </Container>
-        </header>
+        </div>
     )
 }
 export default Header;

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../style/Header.css'
+import '../style/Header.css';
 import Container from '@material-ui/core/Container';
 const Footer = () => {
     return (
