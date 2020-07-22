@@ -5,7 +5,7 @@ const login = () => {
     return (
         <>
             <Header />
-            <div>login</div>
+            <div>jihun</div>
             <Link to="/main">로그인 하기</Link>
         </>
     )
